@@ -4,16 +4,32 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous"></script>
-    <title>Application</title>
-    <link rel="stylesheet" href="style.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <title>German Grammar Games</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="style/style.css"/>
   </head>
   <body>
 
-    <h1>Bestimmte Artikel (definite articles)</h1>
+    <main class="container row">
+      <div class="col s6">
+        <section class="card">
+          <div class="card-content">
+            <span class="card-title">Bestimmte Artikel (definite articles)</span>
 
-    Enter the <span id="article-case"></span> <span id="article-gender"></span> definite article
-    <br/>
-    <input id="article-input" type="text"/>
+            <p>
+              <span class="badge green white-text" id="article-right-count" data-badge-caption="Right">0</span>
+              <span class="badge red white-text"   id="article-wrong-count" data-badge-caption="Wrong">0</span>
+              Enter the
+              <span class="orange accent-1">
+                <span id="article-case"></span>
+                <span id="article-gender"></span></span> definite article</p>
+            <input id="article-input" type="text"/>
+          </div>
+        </section>
+      </div>
+    </main>
 
     <script src="declension.js"></script>
   </body>
